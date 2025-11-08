@@ -4,6 +4,24 @@
 # Compiled Object files
 *.slo
 *.lo
+cat > .gitignore <<'EOF'
+# macOS
+.DS_Store
+
+# CLion / IntelliJ
+.idea/
+*.iml
+
+# CMake build output
+cmake-build-*/
+build/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled objects/binaries
 *.o
 *.obj
 
@@ -39,3 +57,5 @@
 
 # debug information files
 *.dwo
+
+EOF
